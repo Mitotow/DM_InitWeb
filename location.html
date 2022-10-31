@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/location.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Voitureagogo - location</title>
+</head>
+<body>
+    <header>
+        <span><a href="index.html">Voitureagogo</a></span>
+    </header>
+    <form action="form/location" method="post">
+        <div class="main-body">
+            <div class="container perso">
+                <div class="title-container">
+                    <div class="title font-700">Informations personnelles</div>
+                    <div class="subtitle font-400">Merci de remplir vos informations personnelles</div>
+                </div>
+                <div class="questions">
+                    <label class="font-600">
+                        <span>Nom</span>
+                        <input type="text" name="nom" class="champ" placeholder="Simon Strueux" required>
+                    </label>
+                    <label class="font-600">
+                        <span>Numéro de téléphone</span>
+                        <input type="tel" name="tel" class="champ" placeholder="0123456789" required>
+                    </label>
+                    <label class="font-600">
+                        <span>Adresse</span>
+                        <input type="text" name="adr" class="champ" placeholder="2 rue de la poésie" required>
+                    </label>
+                    <label class="font-600">
+                        <span>Ville</span>
+                        <input type="text" name="Ville  " class="champ" placeholder="Nantes" required>
+                    </label>
+                </div>
+            </div>
+            <div class="container loc">
+                <div class="title-container">
+                    <div class="title font-700">Location</div>
+                    <div class="subtitle font-400">Merci de préciser les dates de location</div>
+                </div>
+                <div class="intervalle font-600">Début de location</div>
+                <div class="questions">
+                    <label class="font-600">
+                        <span>Ville</span>
+                        <select class="champ" required>
+                            <option selected disabled>Sélectionner votre ville</option>
+                            <option>Paris</option>
+                            <option>Nantes</option>
+                            <option>Bordeaux</option>
+                            <option>Marseille</option>
+                        </select>
+                    </label>
+                    <label class="font-600">
+                        <span>Date</span>
+                        <input type="date" name="date" class="champ" required>
+                    </label>
+                    <label class="font-600">
+                        <span>Heure</span>
+                        <input type="time" name="hour" class="champ" required>
+                    </label>
+                </div>
+                <div class="intervalle font-600">Fin de location</div>
+                <div class="questions">
+                    <label class="font-600">
+                        <span>Ville</span>
+                        <select class="champ" required>
+                            <option selected disabled>Sélectionner votre ville</option>
+                            <option>Paris</option>
+                            <option>Nantes</option>
+                            <option>Bordeaux</option>
+                            <option>Marseille</option>
+                        </select>
+                    </label>
+                    <label class="font-600">
+                        <span>Date</span>
+                        <input type="date" name="date" class="champ" required>
+                    </label>
+                    <label class="font-600">
+                        <span>Heure</span>
+                        <input type="time" name="hour" class="champ" required>
+                    </label>
+                </div>
+            </div>
+            <div class="container pay">
+                <div class="title-container">
+                    <div class="title font-700">Méthode de paiement</div>
+                    <div class="subtitle font-400">Merci de renseigner vos informations de paiement</div>
+                </div>
+                <div class="methode">
+                    <input type="radio" id="radio-cb" name="radio-cb" class="radio">
+                    <label for="radio-cb" class="radiolabel font-600">
+                        <span>Carte de crédit</span>
+                        <img src="./assets/icon_visa.svg" alt="visa">
+                    </label>
+                    <div class="questions">
+                        <label class="font-600">
+                            <span>Numéro de carte</span>
+                            <input type="number" name="code" class="champ" placeholder="1234 5678 1234 5678" max="9999 9999 9999 9999" required>
+                        </label>
+                        <label class="font-600">
+                            <span>Date d'expiration</span>
+                            <input type="text" name="expiration" class="champ" maxlength="5" placeholder="--/--" required>
+                        </label>
+                        <label class="font-600">
+                            <span>Nom sur la carte</span>
+                            <input type="text" name="nom_sur_cb" class="champ" placeholder="Simon Strueux" required>
+                        </label>
+                        <label class="font-600">
+                            <span>CCV</span>
+                            <input type="number" name="ccv" class="champ" placeholder="123" min="001" max="999" required>
+                        </label>
+                    </div>
+                </div>
+                <div class="methode">
+                    <input type="radio" id="radio-pp" name="radio-pp" class="radio">
+                    <label for="radio-pp" class="radiolabel font-600">
+                        <span>Paypal</span>
+                        <img src="./assets/icon_paypal.svg" alt="paypal">
+                    </label>
+                </div>
+                <div class="methode">
+                    <input type="radio" id="radio-btc" name="radio-btc" class="radio">
+                    <label for="radio-btc" class="radiolabel font-600">
+                        <span>Bitcoin</span>
+                        <img src="./assets/icon_bitcoin.svg" alt="bitcoin">
+                    </label>
+                </div>
+            </div>
+            <div class="container confirm">
+                <div class="title-container">
+                    <div class="title font-700">Confirmation</div>
+                    <div class="subtitle font-400">Nous arrivons vers la fin. Juste quelques clics et votre location est prête !</div>
+                </div>
+                <div class="confirm-container">
+                    <label class="confirm-check font-600">
+                        <input type="checkbox" name="pub">
+                        <span>J’accepte de recevoir des offres promotionnelles.</span>
+                    </label>
+                    <label class="confirm-check font-600">
+                        <input type="checkbox" name="rules">
+                        <span>J’accepte les conditions de vente et la politique privée du site.</span>
+                    </label>
+                    <input type="submit" name="submit" class="font-600" value="Louer">
+                </div>
+            </div>
+        </div>
+        <div class="final-body">
+            <div class="container final">
+                <div class="title-container">
+                    <div class="title font-700">Résumé de la location</div>
+                    <div class="subtitle font-400">Les prix peuvent changer selon la durée de la location et le prix de la voiture.</div>
+                </div>
+                <div class="final-car font-700">
+                    <img src="./assets/resume_gtr.svg" alt="nissan_gtr">
+                    <span>Nissan GT-R</span>
+                </div>
+                <div class="separation"></div>
+                <div class="final-container-price">
+                    <div class="price-type font-400">Sous-total</div>
+                    <div class="total-price font-600">80€</div>
+                </div>
+                <div class="final-container-price">
+                    <div class="price-type font-400">Taxes</div>
+                    <div class="total-price font-600">0€</div>
+                </div>
+                <div class="final-promo font-600">
+                    <label>
+                        <span>Code promo</span>
+                        <input type="text" name="promocode" class="champ" maxlength="6" placeholder="XXXXXX">
+                    </label>
+                    <input type="button" value="Appliquer">
+                </div>
+                <div class="final-price font-700">
+                    <div class="title-container">
+                        <div class="title font-700">Prix total</div>
+                        <div class="subtitle font-400">Prix total incluant les remises</div>
+                    </div>
+                    <span>80€</span>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

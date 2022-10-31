@@ -1,0 +1,148 @@
+.category {
+    padding: 0 64px 30px 64px;
+    color: #90A3BF;
+}
+
+.cards {
+    margin: auto;
+    display: grid;
+    grid-template: max-content;
+    overflow: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: auto 64px auto 64px;
+    gap: 30px;  
+}
+
+.card {
+    width: 300px;
+    padding: 28px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.card .title_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card .title {
+    color: #1A202C;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.card .subtitle {
+    color: #90A3BF;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.card .car {
+    margin: 25px auto 25px auto;
+}
+
+.card .desc {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.card .desc_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3px;
+}
+
+.card .desc_text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #90A3BF;
+}
+
+.card .card_body {
+    margin-bottom: 25px;
+}
+
+.card .footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .footer .price_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    gap: 4px;
+}
+
+.card .footer .price_container .price {
+    font-size: 20px;
+}
+
+.card .footer .price_container .day {
+    align-self: flex-end;
+    font-size: 14px;
+    color: #90A3BF;
+}
+
+.card .footer a {
+    transition: all ease-in-out;
+    text-decoration: none;
+    background: #3563E9;
+    padding: 9px 16px;
+    color: white;
+    border-radius: 4px;
+}
+
+.card .footer a:hover {
+    background: #3563E980
+}
+
+.card .footer a:focus {
+    background: #80808080;
+}
+
+@media (max-width: 800px) {
+    .card {
+        width: 350px;
+    }
+
+    .card .title_container .title {
+        font-size: 16px;
+    }
+
+    .card .title_container .subtitle {
+        font-size: 14px;
+    }
+    
+    .card .car {
+        width: 160px;
+        height: 64px;
+    }
+
+    .card_body {
+        display: flex;
+        justify-content: space-between;
+    }
+    .card .desc {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+}

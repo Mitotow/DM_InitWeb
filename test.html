@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/test.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <input type="radio" name="radio" id="radio" class="radio">
+        <label for="radio" class="radiolabel">
+            Carte de crédit
+            <img src="./assets/icon_visa.svg" alt="visa">
+        </label>
+        <div class="questions">
+            <label>
+                <span>Numéro de carte</span>
+                <input type="text" name="code" class="champ" placeholder="1234 5678 1234 5678" required>
+            </label>
+            <label>
+                <span>Date d'expiration</span>
+                <input type="date" name="expiration" class="champ" required>
+            </label>
+            <label>
+                <span>Nom sur la carte</span>
+                <input type="text" name="nom_sur_cb" class="champ" placeholder="Simon Strueux" required>
+            </label>
+            <label>
+                <span>CCV</span>
+                <input type="number" name="ccv" class="champ" placeholder="123" min="001" max="999" required>
+            </label>
+        </div>
+    </div>
+</body>
+</html>
