@@ -2,6 +2,9 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Open Sans';
+    font-style: normal;
+    line-height: 150%;
 }
 
 body {
@@ -15,7 +18,6 @@ header {
     padding: 28px 18px;
     font-size: 32px;
     font-weight: 700;
-    line-height: 150%;
     margin-bottom: 30px;
 }
 

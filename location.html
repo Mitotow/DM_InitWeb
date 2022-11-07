@@ -95,7 +95,7 @@
                     <div class="subtitle font-400">Merci de renseigner vos informations de paiement</div>
                 </div>
                 <div class="methode">
-                    <input type="radio" id="radio-cb" name="radio-cb" class="radio">
+                    <input type="radio" id="radio-cb" name="radio" class="radio" required>
                     <label for="radio-cb" class="radiolabel font-600">
                         <span>Carte de crédit</span>
                         <img src="./assets/icon_visa.svg" alt="visa">
@@ -120,14 +120,14 @@
                     </div>
                 </div>
                 <div class="methode">
-                    <input type="radio" id="radio-pp" name="radio-pp" class="radio">
+                    <input type="radio" id="radio-pp" name="radio" class="radio" disabled>
                     <label for="radio-pp" class="radiolabel font-600">
                         <span>Paypal</span>
                         <img src="./assets/icon_paypal.svg" alt="paypal">
                     </label>
                 </div>
                 <div class="methode">
-                    <input type="radio" id="radio-btc" name="radio-btc" class="radio">
+                    <input type="radio" id="radio-btc" name="radio" class="radio" disabled>
                     <label for="radio-btc" class="radiolabel font-600">
                         <span>Bitcoin</span>
                         <img src="./assets/icon_bitcoin.svg" alt="bitcoin">
@@ -145,7 +145,7 @@
                         <span>J’accepte de recevoir des offres promotionnelles.</span>
                     </label>
                     <label class="confirm-check font-600">
-                        <input type="checkbox" name="rules">
+                        <input type="checkbox" name="rules" required>
                         <span>J’accepte les conditions de vente et la politique privée du site.</span>
                     </label>
                     <input type="submit" name="submit" class="font-600" value="Louer">
