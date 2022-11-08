@@ -8,8 +8,6 @@
 }
 
 body {
-    font-family: 'Open Sans';
-    font-style: normal;
     background: #F6F7F9;
 }
 
@@ -22,6 +20,13 @@ header {
 }
 
 header a {
+    margin: 60px;
     text-decoration: none;
     color: #3563E9;
+}
+
+@media (max-width: 800px) {
+    header a {
+        margin: 0;
+    }
 }

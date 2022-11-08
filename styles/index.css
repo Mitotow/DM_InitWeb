@@ -4,19 +4,14 @@
 }
 
 .cards {
-    margin: auto;
     display: grid;
-    grid-template: max-content;
-    overflow: auto;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    grid-template-columns: repeat(4, 1fr);
     margin: auto 64px auto 64px;
-    gap: 30px;  
+    gap: 32px;  
 }
 
 .card {
-    width: 300px;
+    min-width: 300px;
     padding: 28px;
     border-radius: 10px;
     background: #FFFFFF;
@@ -53,7 +48,7 @@
 .card .desc {
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    justify-content: space-between;
 }
 
 .card .desc_container {
