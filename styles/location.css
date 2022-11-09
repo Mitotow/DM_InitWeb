@@ -108,32 +108,37 @@ select {
     display: flex;
     flex-flow: column wrap;
     gap: 20px;
-    justify-content: left;
-}
-
-.radiolabel {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
 }
 
 .pay .methode {
-    background: #E0E9F4;
-    display: grid;
-    grid-template-areas: "radio     radiolabel"
-                         "questions questions";
+    background-color: #E0E9F4;
     border-radius: 10px;
     padding: 24px;
+    display: grid;
+    grid-template-areas: "radio label space logo" "questions questions questions questions";
+    grid-template-columns: max-content max-content 1fr max-content;
+    align-items: center;
+    column-gap: 12px;
 }
 
-.pay .methode input[type="radio"] {
-    display: inline-block;
-}
+.pay .methode img {
 
-.pay .methode .radiolabel {
+    grid-area: logo;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: flex-end;
+
+}
+
+.pay .methode input {
+
+    margin: 0;
+    grid-area: radio;
+
+}
+
+.pay .methode .questions {
+    grid-area: questions;
+    margin-top: 24px;
 }
 
 .pay .methode .questions {
@@ -143,8 +148,8 @@ select {
 .pay .methode input[type="radio"]:checked ~ .questions {
     margin-top: 32px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 32px;
+    grid-template-rows: 1fr 1fr;
+    gap: 32px;
 }
 
 .confirm-container {
@@ -153,7 +158,7 @@ select {
 }
 
 .confirm-container input[type="submit"] {
-    width: 92px;
+    width: 100px;
     height: 50px;
     background: #3563E9;
     border-radius: 4px;
