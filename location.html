@@ -94,42 +94,42 @@
                     <div class="title font-700">Méthode de paiement</div>
                     <div class="subtitle font-400">Merci de renseigner vos informations de paiement</div>
                 </div>
-                <div class="methode">
+                <div class="methode font-600">
                     <input type="radio" id="radio-cb" name="radio" class="radio" required>
-                    <label for="radio-cb" class="radiolabel font-600">
+                    <label for="radio-cb" class="radiolabel">
                         Carte de crédit
                     </label>
                     <img src="./assets/icon_visa.svg" alt="visa" class="logo">
                     <div class="questions">
-                        <label class="font-600">
-                            <span>Numéro de carte</span>
-                            <input type="number" name="code" class="champ" placeholder="1234 5678 1234 5678" max="9999 9999 9999 9999" required>
+                        <label>
+                            Numéro de carte
+                            <input type="number" name="code" class="champ" placeholder="1234 5678 1234 5678" max="9999999999999999" required>
                         </label>
-                        <label class="font-600">
-                            <span>Date d'expiration</span>
-                            <input type="text" name="expiration" class="champ" maxlength="5" placeholder="--/--" required>
+                        <label>
+                            Date d'expiration
+                            <input type="number" name="expiration" class="champ" max="1299" placeholder="--/--" required>
                         </label>
-                        <label class="font-600">
-                            <span>Nom sur la carte</span>
+                        <label>
+                            Nom sur la carte
                             <input type="text" name="nom_sur_cb" class="champ" placeholder="Simon Strueux" required>
                         </label>
-                        <label class="font-600">
-                            <span>CCV</span>
+                        <label>
+                            CCV
                             <input type="number" name="ccv" class="champ" placeholder="123" min="001" max="999" required>
                         </label>
                     </div>
                 </div>
-                <div class="methode">
+                <div class="methode font-600">
                     <input type="radio" id="radio-pp" name="radio" class="radio">
-                    <label for="radio-pp" class="radiolabel font-600">
-                        <span>Paypal</span>
+                    <label for="radio-pp" class="radiolabel">
+                        Paypal
                     </label>
                     <img src="./assets/icon_paypal.svg" alt="paypal" class="logo">
                 </div>
-                <div class="methode">
+                <div class="methode font-600">
                     <input type="radio" id="radio-btc" name="radio" class="radio">
-                    <label for="radio-btc" class="radiolabel font-600">
-                        <span>Bitcoin</span>
+                    <label for="radio-btc" class="radiolabel">
+                        Bitcoin
                     </label>
                     <img src="./assets/icon_bitcoin.svg" alt="bitcoin" class="logo">
                 </div>
@@ -176,7 +176,7 @@
                         <span>Code promo</span>
                         <input type="text" name="promocode" class="champ" maxlength="6" placeholder="XXXXXX">
                     </label>
-                    <input type="button" value="Appliquer">
+                    <input type="button" value="Appliquer" onClick="alert('Code promo appliquer !')">
                 </div>
                 <div class="final-price font-700">
                     <div class="title-container">

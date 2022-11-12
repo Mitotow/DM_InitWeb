@@ -1,12 +1,15 @@
-.category {
-    padding: 0 64px 30px 64px;
-    color: #90A3BF;
+.main-content {
+    padding: 32px;
 }
+
+.category {
+    margin-bottom: 30px;
+    color: #90A3BF;
+} 
 
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    margin: auto 64px auto 64px;
     gap: 32px;  
 }
 
@@ -25,24 +28,19 @@
 
 .card .title {
     color: #1A202C;
-    font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: 150%;
 }
 
 .card .subtitle {
     color: #90A3BF;
-    font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 150%;
 }
 
 .card .car {
-    margin: 25px auto 25px auto;
+    display: block;
+    margin: 25px auto;
 }
 
 .card .desc {
@@ -115,6 +113,10 @@
 }
 
 @media (max-width: 800px) {
+    .main-content {
+        padding: 20px;
+    }
+
     .card {
         width: 350px;
     }

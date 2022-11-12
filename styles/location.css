@@ -1,27 +1,11 @@
-.font-700 {
-    font-weight: 700;
-}
-
-.font-600 {
-    font-weight: 600;
-}
-
-.font-500 {
-    font-weight: 500;
-}
-
-.font-400 {
-    font-weight: 400;
-}
-
-input[type="submit"] {
+input[type="submit"], input[type="button"] {
     cursor: pointer;
 }
 
 form {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 32px;
 }
 
@@ -81,7 +65,7 @@ select {
 }
 
 .container .title-container {
-    margin-bottom: 33px;  
+    margin-bottom: 32px;  
 }
 
 .container .questions {
@@ -115,33 +99,31 @@ select {
     border-radius: 10px;
     padding: 24px;
     display: grid;
-    grid-template-areas: "radio label space logo" "questions questions questions questions";
+    grid-template-areas: "radio      label      separation logo" 
+                         "questions  questions  questions  questions";
     grid-template-columns: max-content max-content 1fr max-content;
     align-items: center;
     column-gap: 12px;
 }
 
 .pay .methode img {
-
     grid-area: logo;
     display: flex;
     justify-content: flex-end;
-
 }
 
 .pay .methode input {
-
     margin: 0;
     grid-area: radio;
+}
 
+.pay .methode .radiolabel {
+    grid-area: label;
 }
 
 .pay .methode .questions {
     grid-area: questions;
     margin-top: 24px;
-}
-
-.pay .methode .questions {
     display: none;
 }
 
@@ -215,11 +197,19 @@ select {
 }
 
 .final .final-promo input[type="button"] {
-    width: 97px;
-    height: 39px;
+    width: 100px;
+    height: 40px;
     background: white;
     border: 1px solid #596780;
     border-radius: 4px;
+}
+
+.final .final-promo input[type="button"]:hover {
+    background: #80808080; 
+}
+
+.final .final-promo input[type="button"]:active {
+    background: grey;   
 }
 
 .final .final-price {
